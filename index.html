@@ -17,7 +17,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'hockey-primary':'#FF4240;',
+                        'hockey-primary': '#FF4240;',
                     }
                 }
             }
@@ -37,8 +37,8 @@
 </head>
 
 <body class="font-manrope">
-    <header class="md:container md:mx-auto">
-        <nav class="navbar bg-base-100">
+    <header class="container lg:container mx-auto">
+        <nav class="navbar px-0 bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -57,7 +57,8 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl lg:text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                <a class="btn-ghost text-2xl font-extrabold lg:text-4xl">Hockey<span
+                        class="text-[#FF4240]">’</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -69,7 +70,8 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <button class="btn btn-ghost btn-circle">
+
+                <button class="btn btn-ghost btn-circle hidden lg:inline">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -77,11 +79,44 @@
                     </svg>
                 </button>
                 <div>
-                    <a class="btn bg-hockey-primary text-white px-8 ">Button</a>
+                    <a class="btn bg-hockey-primary text-white px-6 ">Get Ticket</a>
                 </div>
-
             </div>
         </nav>
+        <!-- Slider Section  -->
+        <Section class="container px-4 lg:container mx-auto">
+            <div class="lg:relative mx-auto">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full lg:h-3/4">
+                        <img src="images/1.png" class="sm:my-6 lg:my-5 rounded-2xl w-full"/>
+                        <div class="absolute flex transform -translate-y-1/2 left-5 right-5  -mt-50   lg:top-1/2 mt-60">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="/images/2.png" class="sm:my-6 lg:my-5 rounded-2xl w-full"/>
+                        <div class="absolute flex transform -translate-y-1/2 left-5 right-5 lg:top-1/2 mt-60">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="images/3.png" class="sm:my-6 lg:my-5 rounded-2xl w-full"/>
+                        <div class="absolute flex transform -translate-y-1/2 left-5 right-5 top-3/4 mt-0 lg:top-1/2 mt-60">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#131318] rounded-2xl mx-auto h-[120px] lg:w-[30rem] h-[100px]  lg:absolute lg:-mt-[18rem] lg:ml-[40rem]">
+                <h3 class="text-[#FFF] px-8 text-xl font-bold mb-2">Meet all the heroes from the field</h3>
+                <p class="text-[#FFF] px-8 text-xs font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                  dolor. Purus urna in sit nullam proin. </p>
+              </div>       
+
+        </Section>
 
     </header>
     <main>
